@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Revathi';
+    src: url('Assets/fonts/ML_TT_Revathi.ttf') format('truetype');
+    /* Ensure the font file is correctly linked */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Fira+Sans:wght@300;400;600&display=swap');
+
+.about-us {
+    background-color: #2a2a29; /* Your website's color scheme */
+    color: #ffffff;
+    padding: 50px 20px;
+    text-align: justify;
+}
+
+.about-us .container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.about-us h2 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffcc00; /* Accent color */
+}
+
+.about-us p {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+h1,
+h2 {
+    color: #444;
+}
+
+ul {
+    list-style: none;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input,
+textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+button {
+    background: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+.carousel img {
+    width: 100%;
+    max-width: 500px;
+    /* Set a reasonable max-width */
+    height: auto;
+    /* Maintain aspect ratio */
+    object-fit: cover;
+    /* Ensures images fit well without distortion */
+}

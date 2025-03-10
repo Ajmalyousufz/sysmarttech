@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Best Gypsum Plastering Service in Kerala. Smooth Finish, Crack-Free Walls, and Fast Service.">
+    <meta name="keywords" content="Gypsum Plastering, Kerala, Interior Plastering, Wall Finishing">
+    <meta name="author" content="Bright Building Solutions - Libin Raj">
+    <title>Bright Building Solutions | Gypsum Plastering in Kerala</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            padding: 0;
+            text-align: center;
+            background: #2a2a29;
+            color: #ffffff;
+        }
+
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .hero-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(Assets/images/bbs-libin-house-1.jpg);
+            background-size: cover;
+            background-position: center;
+            animation: hero-image-fade-in 2s ease-in-out;
+        }
+
+        .hero-logo {
+            position: sticky;
+            width: 8.5rem;
+            height: 8.5rem;
+            left: 0;
+            background-image: url(Assets/images/bbs-logo.png);
+            background-size: cover;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, #2a2a29, rgba(0, 0, 0, 0.6), rgba(8, 8, 8, 0.5));
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #ffffff;
+            margin-bottom: 1rem;
+            animation: hero-h1-fade-in 2s ease-in-out;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #d4d4d4;
+            animation: hero-p-fade-in 2s ease-in-out;
+        }
+
+        .cta {
+            background: #ffcc00;
+            color: #2a2a29;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            margin-top: 60px;
+            display: inline-block;
+            transition: all 0.3s ease-in-out;
+            animation: cta-fade-in 2s ease-in-out;
+        }
+
+        @keyframes hero-image-fade-in {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes hero-h1-fade-in {
+            from {
+                opacity: 0;
+                transform: translate(-50%, -60%);
+            }
+
+            to {
+                opacity: 1;
+                transform: translate(-50%, -60%);
+            }
+        }
+
+        @keyframes hero-p-fade-in {
+            from {
+                opacity: 0;
+                transform: translate(-50%, -40%);
+            }
+
+            to {
+                opacity: 1;
+                transform: translate(-50%, -40%);
+            }
+        }
+
+        @keyframes cta-fade-in {
+            from {
+                opacity: 0;
+                transform: translate(-50%, -20%);
+            }
+
+            to {
+                opacity: 1;
+                transform: translate(-50%, -20%);
+            }
+        }
+
+        .cta:hover {
+            background-color: #fff;
+            color: #333
+        }
+
+        .projects img {
+            width: 100%;
+            max-width: 500px;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+
+        .advantages {
+            background: #3a3a39;
+            padding: 40px 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .advantages h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .advantages-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .advantage-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 220px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .advantage-item i {
+            font-size: 2.5rem;
+            /* Bigger icon */
+            color: #ffcc00;
+            /* Highlight color */
+            margin-bottom: 10px;
+        }
+
+        .advantage-item p {
+            font-size: 1.2rem;
+        }
+
+        /* Responsive for Mobile */
+        @media (max-width: 768px) {
+            .advantages-list {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .advantage-item {
+                width: 80%;
+            }
+
+            .advantages h2 {
+                font-size: 1.8rem;
+            }
+        }
+
+
+        .carousel-container {
+            position: relative;
+            width: 90%;
+            max-width: 1200px;
+            overflow: hidden;
+            margin: auto;
+        }
+
+        .carousel {
+            display: flex;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            gap: 10px;
+            will-change: transform;
+        }
+
+        .carousel-track img {
+            width: calc(100% / 3 - 10px);
+            /* Show 3 images at a time */
+            min-width: calc(100% / 3 - 10px);
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        /* Navigation Buttons */
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.5);
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 24px;
+            border-radius: 50%;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        /* Responsive: Mobile View */
+        @media (max-width: 768px) {
+            .carousel-track img {
+                width: calc(100% - 20px);
+                /* Show 1 image at a time */
+                min-width: calc(100% - 20px);
+                margin: 0 10px;
+            }
+        }
+
+
+
+        .contact-form {
+            background: #3a3a39;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: auto;
+            color: #ffffff;
+        }
+
+        .contact-form {
+            width: 100%;
+            max-width: 400px;
+            /* Adjust as needed */
+            margin: auto;
+            padding: 20px;
+            background: #2a2a29;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            max-width: 100%;
+            /* Prevents exceeding width */
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ffffff;
+            background: #2a2a29;
+            color: #ffffff;
+            border-radius: 5px;
+            box-sizing: border-box;
+            /* Ensures padding doesn’t expand width */
+        }
+
+        /* Ensure button follows the form width */
+        .contact-form button {
+            background: #ffcc00;
+            color: #2a2a29;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* Fix for small screens */
+        @media (max-width: 480px) {
+            .contact-form {
+                padding: 15px;
+            }
+
+            .contact-form input,
+            .contact-form textarea,
+            .contact-form button {
+                font-size: 1rem;
+            }
+        }
+
+
+        footer {
+            background: #1f1f1e;
+            color: #ffffff;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .whatsapp-float img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .carousell {
+            overflow: hidden;
+            width: auto;
+            background-color: #2a2a29;
+            padding: 30px 0;
+            margin-top: 60px;
+            border-radius: 5px;
+            box-shadow: 20px 35px rgba(0, 0, 0, 0.5);
+        }
+
+        .image-container {
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: 250px;
+            justify-items: stretch;
+            animation: animation 19s linear infinite;
+        }
+
+        .image-container img {
+            width: 200px;
+            height: 270px;
+            border-radius: 12px;
+            object-fit: cover;
+            border: 1px solid #a5b1c2;
+        }
+
+        @keyframes animation {
+            to {
+                translate: calc(-11*250px);
+            }
+        }
+
+        .why-choose-us {
+            background: #2a2a29;
+            padding: 10px 10px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .section-title span {
+            color: #ff6600;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            padding: 20px;
+            background: #3a3a39;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .feature.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .feature-text {
+            width: 50%;
+            padding: 20px;
+        }
+
+        .feature-text h3 {
+            font-size: 1.8rem;
+            color: #ff6600;
+            margin-bottom: 10px;
+        }
+
+        .feature-text p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .feature-text ul {
+            text-align: left;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .feature-text ul li {
+            font-size: 1rem;
+            padding: 5px 0;
+            color: #333;
+        }
+
+        .feature-image {
+            width: 40%;
+        }
+
+        .feature-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .call-to-action {
+            margin-top: 40px;
+            padding: 30px;
+            background: #ff6600;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .call-to-action h3 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .call-to-action p {
+            font-size: 1.2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 25px;
+            background: white;
+            color: #ff6600;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #333;
+            color: white;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .feature {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .feature.reverse {
+                flex-direction: column;
+            }
+
+            .feature-text,
+            .feature-image {
+                width: 100%;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .feature-text h3 {
+                font-size: 1.5rem;
+            }
+
+            .feature-text p {
+                font-size: 1rem;
+            }
+
+            .call-to-action h3 {
+                font-size: 1.5rem;
+            }
+        }
+
+        .video-showcase h2 {
+            font-size: 2rem;
+            color: #ffcc00;
+        }
+
+        .video-container {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            height: 25rem;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .video-showcase h2 {
+                font-size: 1.5rem;
+            }
+
+            .video-container {
+                height: 15rem;
+            }
+        }
+
+        /* Navbar Styles
+        .navbar {
+            background-color: #2a2a29;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .navbar .logo {
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 1em;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #FFD700; /* Change color on hover */
+        /* } */
+
+        /* Hamburger Icon */
+        /* .hamburger {
+            display: none;
+            font-size: 1.8em;
+            cursor: pointer;
+            color: white;
+        } */
+
+        /* Mobile Menu */
+        /* @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background-color: #2a2a29;
+                text-align: center;
+                padding: 10px 0;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+            }
+
+            .hamburger {
+                display: block;
+            }
+        } */
+        li {
+            list-style: none;
+        }
+
+        a {
+            color: #FFD700;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 1rem;
+        }
+
+        a:hover {
+            color: #ff6600;
+        }
+
+        header {
+            width: 100%;
+            position: fixed;
+            padding: 0;
+            background-color: transparent;
+            z-index: 100;
+        }
+
+        /* Navbar when scrolled */
+        header.scrolled {
+            background: #2a2a29;
+            /* Change to your preferred color */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar {
+            width: auto;
+            height: 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        @media(max-width: 992px) {
+            header {
+                width: 100%;
+                position: fixed;
+                background-color: transparent;
+                align-items: center;
+                z-index: 100;
+            }
+
+            .navbar {
+                width: auto;
+                height: 60px;
+                max-width: 1200px;
+                margin: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+
+        .navbar .logo a {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .navbar .links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .navbar .toggle_btn {
+            color: #fff;
+            display: none;
+            font-size: 1.5rem;
+        }
+
+        .action_btn {
+            padding: 0.5rem 1rem;
+            background-color: #ff6600;
+            color: white;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            border: none;
+            outline: none;
+            text-decoration: none;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .action_btn:hover {
+            scale: 1.05;
+            color: #fff;
+        }
+
+        .action_btn:active {
+            scale: 0.95;
+        }
+
+        /* Dropdown menu */
+        .dropdown_menu {
+            /* display: none; */
+            height: 0;
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            width: 300px;
+            border-radius: 10px;
+            top: 60px;
+            right: 2rem;
+            overflow: hidden;
+            z-index: 9999;
+            transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .dropdown_menu.open {
+            height: 240px;
+        }
+
+        .dropdown_menu li {
+            padding: 0.7rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dropdown_menu .action_btn {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Responsive Design */
+
+        @media(max-width: 992px) {
+
+            .navbar .links,
+            .navbar .action_btn {
+                display: none;
+            }
+
+            .navbar .toggle_btn {
+                display: block;
+            }
+        }
+
+        @media(max-width: 576px) {
+
+            .dropdown_menu {
+                left: 2rem;
+                width: unset;
+            }
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo" style="margin-top: 20px; margin-left: 20px;"><img style="width: 50px;"
+                    src="Assets/images/bbs-logo.png" /></div>
+            <ul class="links">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#Projects">Works</a></li>
+                <li><a href="#Material">Material</a></li>
+                <li><a href="#Benefits">Benefits</a></li>
+                <li><a href="#enquiry">Enquiry</a></li>
+                <li><a href="#watchvideo">Watch Video!</a></li>
+            </ul>
+            <a href="tel:+919846203037" class="action_btn">Call to Action</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <!-- <div class="hamburger" onclick="toggleMenu()">&#9776;</div>  -->
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#Projects">Works</a></li>
+            <li><a href="#Material">Material</a></li>
+            <li><a href="#Benefits">Benefits</a></li>
+            <li><a href="#enquiry">Enquiry</a></li>
+            <li><a href="#watchvideo">Watch Video!</a></li>
+            <li><a href="tel:+919846203037" class="action_btn">Call to Action</a></li>
+        </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
+        }
+    </script>
+
+    <section class="hero" id="Home" style="margin: 0%;">
+        <div class="hero-image"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <!-- logo -->
+            <div class="hero-logo"></div>
+            <div>
+
+                <h1 class="hero-title">Bright Building Solutions</h1>
+                <p class="hero-subtitle">Kerala's Best Gypsum Plastering Service</p>
+                <a href="tel:+919846203037" class="cta hero-button">Call To Enquiry<br>+919846203037</a>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about-us" class="about-brand"
+        style="background: #2a2a29; color: #ffffff; padding: 50px 20px; text-align: center;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 20px; color: #ffcc00;">About Us</h2>
+        <div style="max-width: 800px; margin: auto; text-align: justify;">
+            <p style="font-size: 1.2rem; line-height: 1.6; color: #d4d4d4;">
+                At <strong>Bright Building Solutions</strong>, we specialize in high-quality gypsum plastering services.
+                Whether you are constructing a new home or renovating an existing one, we bring expertise, efficiency,
+                and
+                excellence to every project.
+            </p>
+            <p style="font-size: 1.2rem; line-height: 1.6; color: #d4d4d4;">
+                Using <strong>Gyptel Gypsum Plaster</strong>, we ensure <strong>seamless, durable, and eco-friendly
+                    finishes</strong>
+                that enhance the strength and aesthetics of your walls. Our skilled professionals are committed to
+                delivering
+                top-tier craftsmanship, helping you build spaces that last a lifetime.
+            </p>
+        </div>
+    </section>
+
+
+
+
+    <section id="Projects" class="projects">
+        <h2 style="margin-top: 60px; margin-bottom: 10px; padding: 0%;">Our Works</h2>
+        <div class="carousell">
+            <div class="image-container">
+                <img src="Assets/images/bbs-libin-house-1.jpg" alt="Project 1">
+                <img src="Assets/images/bbs-libin-house-2.jpg" alt="Project 2">
+                <img src="Assets/images/bbs-libin-house-3.jpg" alt="Project 3">
+                <img src="Assets/images/bbs-libin-house-4.jpg" alt="Project 4">
+                <img src="Assets/images/bbs-libin-house-5.jpg" alt="Project 5">
+                <img src="Assets/images/bbs-libin-house-6.jpg" alt="Project 6">
+                <img src="Assets/images/bbs-libin-house-7.jpg" alt="Project 7">
+                <img src="Assets/images/bbs-libin-house-8.jpg" alt="Project 8">
+                <img src="Assets/images/bbs-libin-house-9.jpg" alt="Project 9">
+                <img src="Assets/images/bbs-libin-house-10.jpg" alt="Project 10">
+                <img src="Assets/images/bbs-libin-house-11.jpg" alt="Project 11">
+                <img src="Assets/images/bbs-libin-house-12.jpg" alt="Project 12">
+                <img src="Assets/images/bbs-libin-house-13].jpg" alt="Project 13">
+                <img src="Assets/images/bbs-libin-house-14.jpg" alt="Project 14">
+                <img src="Assets/images/bbs-libin-house-15.jpg" alt="Project 15">
+                <img src="Assets/images/bbs-libin-house-16.jpg" alt="Project 16">
+                <img src="Assets/images/bbs-libin-house-17.jpg" alt="Project 17">
+                <img src="Assets/images/bbs-libin-house-18.jpg" alt="Project 18">
+                <img src="Assets/images/bbs-libin-house-19.jpg" alt="Project 19">
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <section id="Whybbs" class="advantages">
+        <h2>Why Choose Bright Building Solution?</h2>
+        <div class="advantages-list">
+            <div class="advantage-item">
+                <i class="fas fa-paint-roller"></i>
+                <p>Smooth & Crack-Free Finish</p>
+            </div>
+            <div class="advantage-item">
+                <i class="fas fa-tachometer-alt"></i>
+                <p>Faster Application & Drying</p>
+            </div>
+            <div class="advantage-item">
+                <i class="fas fa-shield-alt"></i>
+                <p>Durable & High-Quality Material</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="watchvideo" class="video-showcase">
+        <h2>Watch Our Work in Action</h2>
+        <div class="video-container">
+            <iframe
+                src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fvchannelkerala%2Fvideos%2F1025493222304243%2F&show_text=false&width=560&t=0"
+                width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                allowFullScreen="true"></iframe>
+        </div>
+    </section>
+
+    <section id="Material" class="about-brand"
+        style="background: #2a2a29; color: #ffffff; padding: 50px 20px; text-align: center;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 20px; color: #ffcc00;">Why Choose Gyptel Gypsum Plaster?</h2>
+        <p style="font-size: 1.2rem; max-width: 800px; margin: auto; line-height: 1.6; color: #d4d4d4; text-align: justify;">
+            In today’s construction industry, material shortages and rising costs pose major challenges. Builders
+            struggle with high material costs.
+            However, <strong>Gyptel Gypsum Plaster</strong> is leading a revolutionary change. It outperforms
+            traditional plastering methods in <strong>quality, durability, and reliability</strong>.<br><br>
+        </p>
+        <p style="font-size: 1.2rem; max-width: 800px; margin: auto; line-height: 1.6; color: #d4d4d4; text-align: justify;">
+            By using Gyptel Gypsum Plaster, <strong>cement and sand consumption is reduced</strong>, eliminating the
+            need for putty and white cement.
+            This innovation can lower construction costs by up to <strong>30%</strong>, while fast application mitigates
+            labor shortages.
+        </p>
+    </section>
+
+    <section id="Benefits" class="advantages" style="background: #1f1f1e; padding: 50px 20px; text-align: center;">
+        <h2 style="font-size: 2.2rem; color: #ffcc00;">Key Benefits</h2>
+        <div class="advantage-list" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+            <div class="advantage-item"
+                style="flex: 1 1 300px; max-width: 350px; padding: 20px; background: #3a3a39; border-radius: 10px; text-align: center;">
+                <i class="fas fa-paint-roller" style="font-size: 2rem; color: #ffcc00;"></i>
+                <h3 style="color: #ffffff; font-size: 1.5rem; margin-top: 10px;">Crack Resistance</h3>
+                <p style="color: #d4d4d4; font-size: 1rem; ">Say goodbye to cracks! Gyptel Gypsum Plaster offers superior
+                    <strong>bonding strength</strong> compared to cement.
+                    It adapts to minor structural movements, preventing cracks while ensuring a flawless finish.
+                </p>
+                <ul style="text-align: justify;">
+                    <li>✔ Specific gravity: <strong>2.3</strong></li>
+                    <li>✔ Degree of whiteness: <strong>>90%</strong></li>
+                </ul>
+            </div>
+            <div class="advantage-item"
+                style="flex: 1 1 300px; max-width: 350px; padding: 20px; background: #3a3a39; border-radius: 10px; text-align: center;">
+                <i class="fas fa-fire" style="font-size: 2rem; color: #ffcc00;"></i>
+                <h3 style="color: #ffffff; font-size: 1.5rem; margin-top: 10px;">Heat Resistance</h3>
+                <p style="color: #d4d4d4; font-size: 1rem;">
+                    Gyptel Gypsum Plaster acts as a <strong>heat insulator</strong>, keeping your home cooler and
+                    reducing energy costs.
+                    With its Class A fire resistance and low thermal conductivity, it offers <strong>unmatched
+                        safety</strong>.
+                </p>
+                <ul style="text-align: justify;">
+                    <li>✔&nbsp;&nbsp;Thermal conductivity: <strong>0.2 W/km</strong></li>
+                    <li>✔&nbsp;&nbsp;Meets <strong>BS 476: 1970 Class 0</strong><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;standards</li>
+                    
+                </ul>
+                </p>
+            </div>
+            <div class="advantage-item"
+                style="flex: 1 1 300px; max-width: 350px; padding: 20px; background: #3a3a39; border-radius: 10px; text-align: center;">
+                <i class="fas fa-tint-slash" style="font-size: 2rem; color: #ffcc00;"></i>
+                <h3 style="color: #ffffff; font-size: 1.5rem; margin-top: 10px;">No Water Curing Needed</h3>
+                <p style="color: #d4d4d4; font-size: 1rem;">
+                    Unlike traditional cement,<strong>no re-wetting is required</strong>. This means lower labor costs,
+                    faster construction, and an <strong>eco-friendly</strong> solution that saves thousands of liters of
+                    water.
+                </p>
+            </div>
+            <div class="advantage-item"
+                style="flex: 1 1 300px; max-width: 350px; padding: 20px; background: #3a3a39; border-radius: 10px; text-align: center;">
+                <i class="fas fa-shield-alt" style="font-size: 2rem; color: #ffcc00;"></i>
+                <h3 style="color: #ffffff; font-size: 1.5rem; margin-top: 10px;">Long-Lasting Durability</h3>
+                <p style="color: #d4d4d4; font-size: 1rem;">
+                    Gypsum has stood the test of time—used in the <strong>Egyptian Pyramids</strong> , it’s a material
+                    known for extreme durability.
+                    Gyptel Gypsum Plaster is <strong>chloride-free</strong>, ensuring it remains intact for decades.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-showcase">
+        <h2>Superior Finish with Gyptel Gypsum Plaster – Watch Now!</h2>
+        <div class="video-container">
+            <iframe
+                src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fbrightbuildinganchal%2Fvideos%2F1088801356337511%2F&show_text=false&width=800&t=0"
+                width="800" height="550" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+            </iframe>
+
+        </div>
+    </section>
+
+    <section class="contact-cta" style="background: #2a2a29; padding: 40px 20px; text-align: center;">
+        <h2 style="color: #ffcc00; font-size: 2rem;">Get the Best Gypsum Plastering Service!</h2>
+        <p style="color: #d4d4d4; font-size: 1.2rem;">Bright Building Solutions ensures top-quality application with
+            Gyptel Gypsum Plaster.</p>
+        <a href="tel:+919846203037"
+            style="display: inline-block; background: #ffcc00; color: #2a2a29; padding: 15px 25px; font-size: 1.2rem; font-weight: bold; text-decoration: none; border-radius: 5px; margin-top: 10px;">Call
+            Now: +91 98462 03037</a>
+    </section>
+
+    <section id="enquiry">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <form
+                action="https://docs.google.com/forms/d/e/1FAIpQLScEYLri0NhUaJgpwTNmE2Dge1fMNotuamY0_MaSE9oBU56w1g/formResponse"
+                method="POST" target="_blank">
+                <input type="text" width="100%" name="entry.123456789" placeholder="Your Name" required>
+                <input type="number" name="entry.987654321" placeholder="Your Phone" required>
+                <textarea name="entry.567890123" placeholder="Your Message" rows="4"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+
+    <footer>© 2025 Bright Building Solutions |
+        <!-- <br>Owned by Libin Raj |  -->
+        <!-- Phone : +919846203037 -->
+        <br>Kollam, Kerala
+    </footer>
+
+    <div class="whatsapp-float" id="whatsapp-animation" onclick="openWhatsApp()"></div>
+
+    <script>
+        let index = 0;
+        function autoSlide() {
+            const carousel = document.querySelector('.carousel');
+            const images = document.querySelectorAll('.carousel img');
+            index = (index + 1) % images.length;
+            carousel.style.transform = `translateX(${-index * 100}%)`;
+        }
+        setInterval(autoSlide, 3000);
+
+        function openWhatsApp() {
+            const phoneNumber = "+919846203037"; // Replace with actual number
+            const message = encodeURIComponent("Hello, I am interested in Gypsum Plastering services. I found your website and would like to know more.");
+            window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+        }
+
+        // Load Lottie animation
+        lottie.loadAnimation({
+            container: document.getElementById("whatsapp-animation"),
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            path: "Assets/icons/icons8-whatsapp.json" // Replace with your actual JSON path
+        });
+    </script>
+    <script>
+        function toggleMenu() {
+            document.querySelector('.links').classList.toggle('open');
+        }
+        window.addEventListener("scroll", function () {
+            const header = document.querySelector("header");
+            if (window.scrollY > 50) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        });
+
+    </script>
+</body>
+
+</html>
