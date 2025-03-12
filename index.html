@@ -357,7 +357,7 @@
 
         .whatsapp-float {
             position: fixed;
-            bottom: 20px;
+            bottom: 55px;
             right: 20px;
             background: #25D366;
             color: white;
@@ -779,6 +779,10 @@
             justify-content: center;
         }
 
+        .dropdown_menu.active {
+            display: block;
+        }
+
         /* Responsive Design */
 
         @media(max-width: 992px) {
@@ -812,8 +816,9 @@
 
     <header>
         <div class="navbar">
-            <div class="logo" style="margin-top: 20px; margin-left: 20px;"><img style="width: 50px;"
-                    src="Assets/images/bbs-logo.png" /></div>
+            <div class="logo" href="#Home" style="margin-top: 20px; margin-left: 20px;">
+                <a href="#Home"><img style="width: 50px;"
+                    src="Assets/images/bbs-logo.png" /></a></li></div>
             <ul class="links">
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#about-us">About Us</a></li>
@@ -852,6 +857,16 @@
 
             toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
         }
+
+        const menuItems = document.querySelectorAll(".dropdown_menu li a");
+
+        menuItems.forEach(item => {
+            item.addEventListener("click", () => {
+                dropDownMenu.classList.remove('open')
+                toggleBtnIcon.classList = 'fa-solid fa-bars'
+            })
+        })
+
     </script>
 
     <section class="hero" id="Home" style="margin: 0%;">
@@ -865,6 +880,7 @@
                 <h1 class="hero-title">Bright Building Solutions</h1>
                 <p class="hero-subtitle">Kerala's Best Gypsum Plastering Service</p>
                 <a href="tel:+919846203037" class="cta hero-button">Call To Enquiry<br>+919846203037</a>
+                <p style="margin-top: 5rem;">"Neet And Clean Work"</p>
 
             </div>
         </div>
@@ -954,13 +970,15 @@
     <section id="Material" class="about-brand"
         style="background: #2a2a29; color: #ffffff; padding: 50px 20px; text-align: center;">
         <h2 style="font-size: 2.5rem; margin-bottom: 20px; color: #ffcc00;">Why Choose Gyptel Gypsum Plaster?</h2>
-        <p style="font-size: 1.2rem; max-width: 800px; margin: auto; line-height: 1.6; color: #d4d4d4; text-align: justify;">
+        <p
+            style="font-size: 1.2rem; max-width: 800px; margin: auto; line-height: 1.6; color: #d4d4d4; text-align: justify;">
             In today’s construction industry, material shortages and rising costs pose major challenges. Builders
             struggle with high material costs.
             However, <strong>Gyptel Gypsum Plaster</strong> is leading a revolutionary change. It outperforms
             traditional plastering methods in <strong>quality, durability, and reliability</strong>.<br><br>
         </p>
-        <p style="font-size: 1.2rem; max-width: 800px; margin: auto; line-height: 1.6; color: #d4d4d4; text-align: justify;">
+        <p
+            style="font-size: 1.2rem; max-width: 800px; margin: auto; line-height: 1.6; color: #d4d4d4; text-align: justify;">
             By using Gyptel Gypsum Plaster, <strong>cement and sand consumption is reduced</strong>, eliminating the
             need for putty and white cement.
             This innovation can lower construction costs by up to <strong>30%</strong>, while fast application mitigates
@@ -975,7 +993,8 @@
                 style="flex: 1 1 300px; max-width: 350px; padding: 20px; background: #3a3a39; border-radius: 10px; text-align: center;">
                 <i class="fas fa-paint-roller" style="font-size: 2rem; color: #ffcc00;"></i>
                 <h3 style="color: #ffffff; font-size: 1.5rem; margin-top: 10px;">Crack Resistance</h3>
-                <p style="color: #d4d4d4; font-size: 1rem; ">Say goodbye to cracks! Gyptel Gypsum Plaster offers superior
+                <p style="color: #d4d4d4; font-size: 1rem; ">Say goodbye to cracks! Gyptel Gypsum Plaster offers
+                    superior
                     <strong>bonding strength</strong> compared to cement.
                     It adapts to minor structural movements, preventing cracks while ensuring a flawless finish.
                 </p>
@@ -996,8 +1015,9 @@
                 </p>
                 <ul style="text-align: justify;">
                     <li>✔&nbsp;&nbsp;Thermal conductivity: <strong>0.2 W/km</strong></li>
-                    <li>✔&nbsp;&nbsp;Meets <strong>BS 476: 1970 Class 0</strong><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;standards</li>
-                    
+                    <li>✔&nbsp;&nbsp;Meets <strong>BS 476: 1970 Class 0</strong><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;standards</li>
+
                 </ul>
                 </p>
             </div>
@@ -1061,10 +1081,20 @@
     </section>
 
 
-    <footer>© 2025 Bright Building Solutions |
-        <!-- <br>Owned by Libin Raj |  -->
-        <!-- Phone : +919846203037 -->
-        <br>Kollam, Kerala
+    <footer style="display: flex; justify-content: center; align-items: center;">
+        <div style="color: #a5b1c2;">
+            © 2025 Bright Building Solutions |
+            <!-- <br>Owned by Libin Raj |  -->
+            <!-- Phone : +919846203037 -->
+            <br>Kollam, Kerala
+        </div>
+        <div style="margin-left: 1rem;">
+            <a href="https://www.facebook.com/brightbuildinganchal" target="_blank"
+                style="color: inherit; text-decoration: none;">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+        </div>
+
     </footer>
 
     <div class="whatsapp-float" id="whatsapp-animation" onclick="openWhatsApp()"></div>
