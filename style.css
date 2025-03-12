@@ -1,9 +1,3 @@
-@font-face {
-    font-family: 'Revathi';
-    src: url('Assets/fonts/ML_TT_Revathi.ttf') format('truetype');
-    /* Ensure the font file is correctly linked */
-}
-
 * {
     margin: 0;
     padding: 0;
